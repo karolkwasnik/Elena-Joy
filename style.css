@@ -293,6 +293,84 @@ nav {
   grid-row: 1/3;
 }
 
+/* Contact */
+.contact {
+  min-height: 90vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact h2 {
+  font-size: 6rem;
+  margin: 2rem 0rem;
+}
+
+h2 span {
+  font-size: 10rem;
+  color: var(--special-color);
+}
+
+.form-wrapper {
+  flex: 3 1 40rem;
+}
+
+.contact img {
+  flex: 1 1 40rem;
+  max-height: 90vh;
+  object-fit: cover;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+form input {
+  display: block;
+  border: none;
+  background: var(--background-color);
+  color: white;
+  padding: 0.5rem 0rem;
+}
+
+form button {
+  display: block;
+  width: 100%;
+  border: none;
+  background: var(--special-color);
+  color: white;
+  padding: 0.8rem 0rem;
+  margin: 1rem 0rem;
+  cursor: pointer;
+}
+
+/*Footer*/
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 10vh;
+  background: var(--background-color);
+  align-items: center;
+  justify-content: center;
+  padding: 0rem 5%;
+}
+
+footer h4 {
+  flex: 3 1 20rem;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 3rem;
+}
+
+footer ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
 /* Mobile */
 
 @media screen and (max-width: 842px) {
@@ -386,5 +464,16 @@ nav {
 
   .gallery header {
     display: none;
+  }
+
+  /*Contact*/
+  .contact img {
+    display: none;
+  }
+
+  /*footer*/
+
+  footer h4 {
+    text-align: center;
   }
 } ;
