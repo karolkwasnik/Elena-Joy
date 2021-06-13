@@ -21,6 +21,11 @@
   src: url(/fonts/GreatVibes-Regular.ttf);
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 html {
   font-size: 62.5%;
   --header1: calc(2rem + 1vw);
@@ -32,6 +37,7 @@ html {
   --special-color: #906272;
   --background-color: #414141;
   --gray-text: #525252;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -415,34 +421,21 @@ footer ul {
     transition: transform 0.6s ease;
   }
 
-  .burger-checkbox {
-    display: block;
-    z-index: 100;
-    position: absolute;
-    top: 23%;
-    right: 4.3%;
-    height: 5rem;
-    width: 5rem;
-    opacity: 0;
-    cursor: pointer;
-  }
-
-  .burger-checkbox:checked + .nav-links {
+  .nav-open {
     transform: translate(-100%);
   }
-
-  .burger-checkbox:checked ~ .burger span {
+  .toggle .line1 {
+    transform: rotateZ(45deg) translateY(1.25rem);
     background: white;
   }
 
-  .burger-checkbox:checked ~ .burger span:nth-child(1) {
-    transform: rotateZ(45deg) translateY(1.25rem);
-  }
-  .burger-checkbox:checked ~ .burger span:nth-child(2) {
+  .toggle .line2 {
     opacity: 0;
   }
-  .burger-checkbox:checked ~ .burger span:nth-child(3) {
+
+  .toggle .line3 {
     transform: rotateZ(-45deg) translateY(-1.25rem);
+    background: white;
   }
 
   /*About section*/
